@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order List</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-glass: rgba(255, 255, 255, 0.15);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 flex items-center justify-center p-8">
+    <div class="backdrop-blur-xl bg-white/15 border border-white/30 rounded-3xl shadow-2xl p-8 w-full max-w-md">
+      <!-- Header -->
+      <div class="mb-6">
+        <h2 class="text-3xl font-bold text-white drop-shadow-md tracking-wide">🛒 On Order List</h2>
+        <p class="text-white/70 text-sm mt-1">Daftar buah yang dipesan</p>
+      </div>
+
+      <!-- Divider -->
+      <div class="h-px bg-white/20 mb-6"></div>
+
+      <!-- List Items -->
+      <ul class="space-y-3">
+        <li class="flex items-center gap-4 backdrop-blur-sm bg-white/10 border border-white/20 rounded-2xl px-5 py-4 hover:bg-white/20 hover:scale-[1.02] transition-all duration-200 cursor-default">
+          <span class="text-2xl">🥭</span>
+          <span class="text-white font-semibold text-lg tracking-wide">Mangga</span>
+          <span class="ml-auto bg-white/20 text-white text-xs px-3 py-1 rounded-full border border-white/30">Buah</span>
+        </li>
+        <li class="flex items-center gap-4 backdrop-blur-sm bg-white/10 border border-white/20 rounded-2xl px-5 py-4 hover:bg-white/20 hover:scale-[1.02] transition-all duration-200 cursor-default">
+          <span class="text-2xl">🍈</span>
+          <span class="text-white font-semibold text-lg tracking-wide">Jambu</span>
+          <span class="ml-auto bg-white/20 text-white text-xs px-3 py-1 rounded-full border border-white/30">Buah</span>
+        </li>
+        <li class="flex items-center gap-4 backdrop-blur-sm bg-white/10 border border-white/20 rounded-2xl px-5 py-4 hover:bg-white/20 hover:scale-[1.02] transition-all duration-200 cursor-default">
+          <span class="text-2xl">🍇</span>
+          <span class="text-white font-semibold text-lg tracking-wide">Rambutan</span>
+          <span class="ml-auto bg-white/20 text-white text-xs px-3 py-1 rounded-full border border-white/30">Buah</span>
+        </li>
+      </ul>
+
+      <!-- Footer -->
+      <div class="h-px bg-white/20 mt-6 mb-4"></div>
+      <p class="text-white/50 text-xs text-center">Total: 3 item</p>
+    </div>
+  </body>
+</html>
